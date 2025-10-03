@@ -1,4 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap');
 *{
     font-family: 'Varela Round';
+    margin: 0;
+}
+
+header{
+    background-color: rgb(195, 190, 190);
+    padding: 20px;
+    border-bottom: 3px solid black;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+.img-profile{
+    width: 300px;
+}
+
+.first-section{
+    display: flex;
+    gap: 100px;
+    border-bottom: 3px solid black;
+    padding: 40px 40px 40px 120px;
+
+}
+
+.introduction{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    
+
+}
+
+.introduction-text1{
+    font-size: 60px;
+}
+
+.introduction-text2{
+    font-size: 20px;
+}
+
+.learn-more{
+    font-size: 17px;
+    background-color: rgb(195, 190, 190);
+    margin-top: 10px;
+    padding: 7px;
+    border: 3.5px solid #000;
+    border-radius: 3    px;
+}
+
+.second-section{
+    display: flex;
+    gap: 100px;
+    border-bottom: 3px solid black;
+    padding: 40px 40px 40px 120px;
+
+}
+
+.exp{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.exp-text{
+    font-size: 18px;
 }
