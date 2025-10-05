@@ -2,15 +2,15 @@
 *{
     font-family: 'Varela Round';
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 header{
     background-color:purple;
     padding: 20px;
-    border-bottom: 3px solid black;
     display: flex;
     flex-direction: row-reverse;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .header-link{
@@ -41,7 +41,6 @@ nav{
 .first-section{
     display: flex;
     gap: 100px;
-    border-bottom: 3px solid black;
     padding: 40px;
     justify-content: center;
     align-items: center;
@@ -74,12 +73,9 @@ nav{
     padding: 7px;
     border-radius: 5px;
     transition: transform 0.3s ease;
-}
-
-.learn-more-text{
     color: #fff;
-
 }
+
 
 .learn-more:hover{
     transform: scale(1.1);
@@ -89,10 +85,8 @@ nav{
     background-color: purple;
     display: flex;
     gap: 100px;
-    border-bottom: 3px solid black;
     padding: 40px;
     justify-content: center;
-    align-items: center;
 
 }
 
@@ -104,17 +98,13 @@ nav{
     gap: 10px;
 
     width:400px ;
-    height:250px ;
     background-color: #fff;
     padding: 16px;
     border-radius: 5px;
     overflow-wrap: break-word;
 }
 
-#exp-title{
-    color: purple;
 
-}
 
 .exp-text{
     color: purple;
@@ -124,7 +114,7 @@ nav{
 
 
 
-#experiences-title{
+#experiences-main-title{
     color: #fff;
     background-color: purple;
     padding-top: 20px;
@@ -138,11 +128,10 @@ nav{
     gap: 100px;
     padding: 40px;
     justify-content: center;
-    align-items: center;
 
 }
 
-#projects-title{
+#projects-main-title{
     color: purple;
     padding-top: 20px;
     display: flex;
@@ -160,7 +149,6 @@ nav{
     gap: 10px;
 
     width:400px ;
-    height:250px ;
     background-color: #fff;
     padding: 16px;
     border: 3px solid purple;
@@ -174,38 +162,24 @@ nav{
     color: purple;
 }
 
-#proj-title{
-    color: purple;
+
+
+
+.title{
+    font-size: 2em;
+}
+.subtitle{
+
+    font-size: 26px;
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card-title{
+    color: purple   ;
+}
 
 footer {
     background-color: purple;
-    border-top: 3px solid black;
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -229,4 +203,53 @@ footer {
 
 .contact-icons a:hover{
     transform: scale(1.1);
+}
+
+
+@media (max-width: 900px) {
+    header {
+        font-size: 14px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .first-section {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .introduction {
+        align-items: center;
+    }
+
+    .introduction-text1 {
+        font-size: 48px;
+    }
+
+    .second-section,
+    .third-section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .exp,
+    .proj {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    #experiences-main-title,
+    #projects-main-title {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .contact-icons {
+        gap: 25px;
+    }
 }
